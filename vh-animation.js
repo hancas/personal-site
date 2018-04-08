@@ -71,7 +71,7 @@ function removeClass(el, className) {
 
          sections.forEach((item, index) => {
             // item.style.top = `${(index - currentSection) * 100}vh`
-            item.style.transform = `translateY(${(index - currentSection) * 100}vh)`
+            item.style.transform = `translateY(${(index - currentSection) * 100}vh)` // flip viewheight for each
          })
       }
 
@@ -81,7 +81,7 @@ function removeClass(el, className) {
    // first-load
    addClass(sections[currentSection], 'current')
    document.addEventListener('keydown', (ev) => {
-		if (ev.keyCode === 38 || ev.keyCode === 40) {
+		if (ev.keyCode === 38 || ev.keyCode === 40) { // keycodes for up and down arrows
 			ev.preventDefault()
 			return false
 		}
