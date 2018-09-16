@@ -7,7 +7,19 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#btnabt").click(function(){
         $("#about").toggleClass("active-about");
+        $("#btnabt").text("x");
     });
+//  $(document).on('activeText', function() {
+
+//  });
+//  if ('activeText' > 1) {
+//    $("#about").removeClass("active-about");
+
+//  } else {
+//    $("#btnabt").text("about");
+//  }
+//  $(".active-about").trigger(function(){
+//      $("#btnabt").text("x"); });
 });
 
 function setImgPosition() {
