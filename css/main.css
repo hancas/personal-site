@@ -104,7 +104,6 @@ header {
   background-repeat: no-repeat;
 }
 .home {
-  mix-blend-mode: screen;
   font-family: 'Lato', sans-serif;
   color: #FF9F1C;
   font-size: 2rem;
@@ -120,7 +119,6 @@ header {
   background-image: url("../assets/haenyo/haenyo_logo.svg");
 }
 .scratchmade {
-  mix-blend-mode: screen;
   background-image: url("../assets/scratchmade/scratchmade.svg");
 }
 .powerslam {
@@ -220,7 +218,6 @@ p {
   justify-content: center;
   position: absolute;
   z-index: 10;
-  mix-blend-mode: screen;
 }
 .img-container {
   grid-column: 2 / 9;
@@ -256,14 +253,12 @@ h2 {
   font-family: 'DamienDisplayBold', serif;
   letter-spacing: .05rem;
   text-align: left;
-  mix-blend-mode: screen;
 }
 .portfolio-title {
   width: 100%;
   grid-column: 1 / 2;
   position: absolute;
   z-index: 10;
-  mix-blend-mode: screen;
 }
 .one {
   z-index: 1;
@@ -326,7 +321,6 @@ h2 {
   transition-delay: opacity 5s ease-in-out;
 }
 .bio-footer {
-  mix-blend-mode: multiply;
 }
 
 .bio {
@@ -360,7 +354,6 @@ a:hover {
 .profile > img {
   background: none;
   border: none;
-  mix-blend-mode: ;
   height: 10em;
   width: 10em;
   object-fit: contain;
@@ -406,6 +399,10 @@ button {
   color: #FF9F1C;
   letter-spacing: .1rem;
   border: none;
+}
+button:hover {
+  color: #343f34;
+  transition: ease-in-out .5s;
 }
 
 
@@ -471,7 +468,6 @@ button:focus {outline:0;}
 .scrl-ind::after {
   content: '╲╱';
   color: #FF9F1C;
-  mix-blend-mode: screen;
   position: absolute;
   font-size: .5em;
   height: 2em;
