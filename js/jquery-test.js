@@ -1,27 +1,3 @@
-$(document).ready(function(){
-  $("img").click(function(){
-        $(".current").toggleClass("test");
-    });
-});
-
-$(document).ready(function(){
-  $("#btnabt").click(function(){
-        $("#about").toggleClass("active-about");
-        $("#btnabt").text("x");
-    });
-//  $(document).on('activeText', function() {
-
-//  });
-//  if ('activeText' > 1) {
-//    $("#about").removeClass("active-about");
-
-//  } else {
-//    $("#btnabt").text("about");
-//  }
-//  $(".active-about").trigger(function(){
-//      $("#btnabt").text("x"); });
-});
-
 function setImgPosition() {
   $('.img').each(function() {
     const contW = $('.img-container').width(),
