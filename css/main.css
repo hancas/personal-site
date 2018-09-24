@@ -250,6 +250,17 @@ ul {
   flex-direction: column;
   align-items: flex-start;
 }
+.vid-container {
+  grid-column: 2 / 8;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+video {
+  border: 4px solid #ffffff;
+}
 
 .done {
   display: none;
@@ -325,13 +336,14 @@ h2 {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-column-gap: 4em;
   grid-row-gap: 0;
   padding: 2em;
   opacity: 0;
   position: fixed;
 }
+
 
 .active-about {
   opacity: 1 !important;
@@ -514,8 +526,8 @@ footer::before .box_8 {
   font-size: .75em;
 }
 video {
-  height: 20em;
-  width: 30em;
+  height: 24em;
+  width: auto;
 }
 
 
@@ -546,9 +558,23 @@ h3 {
 
 }
 
-@media (max-width: 812px) {
+@media (max-width: 479px) {
    body {
-
+     font-size: 14px;
+   }
+   .push {
+     height: 50%;
+     width: 300%;
+     top: 0;
+   }
+   .marquee {
+     overflow: hidden;
+     position: relative;
+     grid-column: 1;
+     height: 50vh;
+     margin: 0;
+     z-index: -10;
+     opacity: 0.5;
    }
     .portfolio-container {
      grid-template-columns: 1fr;
@@ -570,6 +596,20 @@ h3 {
       margin: 0;
       overflow: scroll;
     }
+    .vid-container {
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 2em;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+    }
+
     .one {
       margin: 0;
       z-index: 1;
@@ -626,12 +666,14 @@ h3 {
     button {
       font-size: 1.25rem;
     }
+    .line {
+      display: none;
+    }
     footer::before {
       font-size: .5em;
     }
     header {
-      height: 4em;
-      padding: 3em 1.75em 0 1.75em;
+  display: none;
     }
     .draggable {
       display: none;
@@ -650,10 +692,6 @@ h3 {
     .item {
       display: none;
     }
-    .line {
-      width: 100%;
-      border-bottom: 2px solid #FF9F1C;
-    }
     #about {
       grid-template-columns: 1fr;
       grid-row-gap: 0;
@@ -661,12 +699,22 @@ h3 {
     }
     .bio {
       grid-column: 1;
+      padding: 0;
     }
     .line-2 {
       display: none;
     }
-    .skills {
-      display: none;
+    .profile > img {
+      display: flex;
+      position: absolute;
+      z-index: 5 !important;
+      margin-top: 3em;
+      margin-left: 5em;
+      top: 0;
+      left: 0;
+    }
+    .profile {
+      flex-direction: row;
     }
 }
 

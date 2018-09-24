@@ -13,7 +13,6 @@
       <span class="loading__anim"></span>
       <p>loading...</p>
     </section>
-
     <header>
       <div class="line"></div>
     </header>
@@ -91,8 +90,10 @@
         <div class="portfolio-title">
           <div class="item urbanteachers"></div>
         </div>
-        <div class="img-container">
-          <img class="img web one" src="assets/urbanteachers/UT-Website-Scroll.gif">
+        <div class="vid-container">
+            <video autoplay muted loop>
+  <source src="assets/urbanteachers/UrbanTeachers-HomepageAnimation.mov" type="video/mp4" />
+  </video>
         </div>
       <div class="portfolio-info">
         <h2>Urban Teachers</h2>
@@ -105,8 +106,8 @@
         <div class="portfolio-title">
           <div class="item pilon"></div>
         </div>
-        <div class="img-container">
-            <video autoplay muted loop class="img web">
+        <div class="vid-container">
+            <video autoplay muted loop>
   <source src="assets/pilon/pilon-test-4.mp4" type="video/mp4" />
   </video>
         </div>
@@ -150,37 +151,17 @@
     <section id="about">
       <div class="profile">
         <div class="circle"></div>
-        <img class="img" src="assets/selfportrait-2018.svg">
+        <img class="img profile-img" src="assets/selfportrait-2018.svg">
       </div>
       <div class="line-2"></div>
       <div class="bio">
         <div class="greeting"></div>
         <p>I’m a Latinx multidisciplinary designer living and working out of Baltimore, MD. My current obsession has been learning to build with code. I'm originally from Southern California and moved to Baltimore to attend MICA, where I graduated in 2015. I currently work at Kapowza as an Interactive Designer.
 </p>
-<p>
-When I’m not working, I stay busy by reading physics articles, powerlifting, and cooking Ecuadorian food. My ideal weekend is eating a huge bowl of Pho and watching Curb Your Enthusiasm.
+<p class="hobbies">
+When I’m not working, I stay busy by reading <a href="#" class="revealImage" data-src="../assets/about/calabi-yau.png">physics articles,</a> <a href="#" class="revealImage" data-src="../assets/about/wanda_sander.jpg">powerlifting,</a> and <a href="#" class="revealImage" data-src="../assets/about/tamales.jpg">cooking Ecuadorian food</a>. My ideal weekend is eating a huge bowl of Pho and watching <a href="#" class="revealImage" data-src="https://media.giphy.com/media/eggkOyfpyWweI/giphy.gif">Curb Your Enthusiasm.</a>
         </p>
         <h6>This site was designed & coded from scratch. No templates - just learning.</h6>
-      </div>
-      <div class="skills">
-        <h3>skills</h3>
-        <ul>
-          <li>Front-End Web Development</li>
-          <li>Illustration</li>
-          <li>Printmaking & Production</li>
-          <li>Project Management</li>
-        </ul>
-        <h3>programs</h3>
-        <ul>
-          <li>InDesign</li>
-          <li>Illustrator</li>
-          <li>Photoshop</li>
-          <li>After Effects</li>
-          <li>Adobe Xd</li>
-          <li>Sketch</li>
-          <li>Zeplin</li>
-          <li>InVision</li>
-        </ul>
       </div>
     </section>
   <footer id="ftr">
@@ -190,5 +171,6 @@ When I’m not working, I stay busy by reading physics articles, powerlifting, a
   <script src="js/desktop.js"></script>
   <script src="js/time-greeting.js"></script>
   <script src="js/about.js"></script>
+  <script src="js/mouse-image.js"></script>
   </body>
 </html>
