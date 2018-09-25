@@ -20,19 +20,19 @@ html {
 }
 
 body {
-  background-image: url('../assets/light_toast_@2X.png');
+/*  background-image: url('../assets/light_toast_@2X.png');
   background-repeat: repeat;
-  background-size: 6em;
+  background-size: 6em; */
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
-  color: #FF9F1C;
+  color: #343f34;
   margin: 0;
   padding: 0;
   cursor: crosshair;
 }
 body ::selection {
-  color: #333F33;
-  background: #FF9F1C;
+  background: #333F33;
+  color: #FF9F1C;
 }
 
 .loading {
@@ -68,7 +68,9 @@ section.loading.hidden {
     transform: rotate(1turn)
   }
 }
-
+.loading > p {
+  color: #FF9F1C;
+}
 /*.wrapper {
   height: 100vh;
   width: 100vw;
@@ -88,7 +90,7 @@ h6 {
 p {
   font-size: 1em;
   font-family: 'Lato', sans-serif;
-  color: #FF9F1C;
+  color: #343f34;
   margin: 1em 0;
   line-height: 1.5;
 }
@@ -218,18 +220,6 @@ img {
   transition: all 1s cubic-bezier(0.745, -0.015, 0.22, 0.995);
   transition-delay: 0.6s;
 }
-ul {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  list-style-position: inside;
-  margin-bottom: 3em;
-  color: #343f34;
-}
-.bio > p {
-  color: #343f34;
-}
-
 
 .portfolio-info {
   grid-column: 9 / 12;
@@ -279,7 +269,7 @@ video {
   scroll-behavior: smooth;
 }
 h2 {
-  color: #FF9F1C;
+  color: #343f34;
   font-size: 1.5rem;
   font-family: 'DamienDisplayBold', serif;
   letter-spacing: .05rem;
@@ -357,20 +347,14 @@ h2 {
   padding: 2em;
 }
 
-ul {
-  color: #343f34;
-  grid-column: 3;
-  align-self: flex-end;
-  }
-
 a {
   text-decoration: none;
   color: #FF9F1C;
 }
 
 a:hover {
-  color: #ffffff;
-  transition: color .5s ease-out;
+  color: #343f34;
+  transition: color .2s ease-out;
 }
 
 .profile > img {
@@ -524,6 +508,7 @@ footer::before .box_8 {
   z-index: 10;
   margin-left: 40em;
   font-size: .75em;
+  transition: .2s linear;
 }
 video {
   height: 24em;
