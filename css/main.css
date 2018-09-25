@@ -160,7 +160,7 @@ header {
   background-image: url("../assets/scratchmade/scratchmade.svg");
 }
 .powerslam {
-  background-image: url("../assets/powerslam/psw_logo.svg");
+  background-image: url("../assets/powerslam/PSW_logo.svg");
 }
 .foodshed {
   background-image: url("../assets/foodshed/foodshed_logo.svg");
@@ -536,19 +536,13 @@ h3 {
   color: #343f34;
 }
 
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
 
 @media (max-width: 479px) {
    body {
      font-size: 14px;
    }
    .push {
-     height: 50%;
+     height: 100%;
      width: 300%;
      top: 0;
    }
@@ -556,10 +550,12 @@ h3 {
      overflow: hidden;
      position: relative;
      grid-column: 1;
-     height: 50vh;
+     height: 30vh;
      margin: 0;
      z-index: -10;
      opacity: 0.5;
+     top: 0;
+     background-repeat: none;
    }
     .portfolio-container {
      grid-template-columns: 1fr;
@@ -576,7 +572,7 @@ h3 {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 500px;
+      height: 60vh;
       margin-top: 0;
       margin: 0;
       overflow: scroll;
@@ -629,9 +625,6 @@ h3 {
       padding: 2em;
       z-index: 1;
     }
-    .current {
-
-    }
     .scrl-ind {
       display: none;
     }
@@ -654,11 +647,8 @@ h3 {
     .line {
       display: none;
     }
-    footer::before {
-      font-size: .5em;
-    }
     header {
-  display: none;
+      display: none;
     }
     .draggable {
       display: none;
@@ -666,13 +656,10 @@ h3 {
     h2 {
       font-size: 1.25rem;
       width: 1em;
-      letter-spacing: .15rem;
+      letter-spacing: normal;
       text-align: left !important;
       width: auto;
       z-index: 0;
-    }
-    p {
-
     }
     .item {
       display: none;
@@ -700,12 +687,102 @@ h3 {
     }
     .profile {
       flex-direction: row;
+      grid-row: 1;
+    }
+    .img-container:hover::before {
+      display: none;
+    }
+}
+@media (max-width: 800px) and (min-width: 479px) {
+    .portfolio-title {
+      grid-column: 1;
+      top: 0;
+    }
+    .portfolio-container {
+     grid-template-columns: 1fr;
+     display: flex;
+     flex-direction: column;
+     grid-gap: 0;
+     width: 100%;
+     justify-content: center;
+    }
+    .item {
+      top: 0;
+    }
+    .img-container {
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 50vh;
+      margin-top: 0;
+      margin: 0;
+      overflow: scroll;
+    }
+    .vid-container {
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 2em;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+    }
+
+    .portfolio-info {
+      height: auto;
+      width: auto;
+      display: block;
+      position: static;
+      padding: 2em;
+      z-index: 1;
+    }
+
+    #about {
+      grid-template-columns: 1fr;
+      grid-row-gap: 0;
+      padding: 2em;
+    }
+    .bio {
+      grid-column: 1;
+      padding: 0;
+    }
+    .profile > img {
+      display: flex;
+      position: absolute;
+      z-index: 5 !important;
+      margin-top: 3em;
+      margin-left: 5em;
+      top: 0;
+      left: 0;
+    }
+    .profile {
+        flex-direction: row;
+        grid-row: 1;
+    }
+    .line {
+      width: 85%;
+      border-bottom: 2px solid #FF9F1C;
+    }
+    .line-2 {
+      display: none;
+    }
+    img {
+      height: 18em;
+      width: auto;
+    }
+    .img-container:hover::before {
+      margin-left: 10em;
     }
 }
 
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+@media (min-width: 1600px) {
+    img {
+      height: 30em;
+    }
 
 }
