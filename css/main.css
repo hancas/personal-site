@@ -16,13 +16,10 @@ html {
 }
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    background: transparent;
 }
 
 body {
-/*  background-image: url('../assets/light_toast_@2X.png');
-  background-repeat: repeat;
-  background-size: 6em; */
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
   color: #343f34;
@@ -34,7 +31,7 @@ body ::selection {
   background: #333F33;
   color: #FF9F1C;
 }
-
+/* loading screen */
 .loading {
    display: flex;
    flex-direction: column;
@@ -71,12 +68,8 @@ section.loading.hidden {
 .loading > p {
   color: #FF9F1C;
 }
-/*.wrapper {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-rows: 1fr 10fr 1fr;
-} */
+
+/* Headings & Paragraph Styles */
 h1 {
   font-size: 2rem;
   font-family: 'DamienDisplayBold', serif;
@@ -94,6 +87,8 @@ p {
   margin: 1em 0;
   line-height: 1.5;
 }
+
+/* Header */
 header {
   display: flex;
   flex-direction: row;
@@ -106,34 +101,12 @@ header {
   z-index: 10;
 }
 
-.circle {
-  height: 10em;
-  width: 10em;
-  background-color: #FF9F1C;
-  border-radius: 50%;
-}
-
-.profile {
-  display: flex;
-  flex-direction: column;
-  grid-column: 1;
-  grid-row: 1 / 3;
-}
 .line {
   margin-left: 2em;
   width: 85%;
   border-bottom: 2px solid #FF9F1C;
 }
-.line-2 {
-  width: 100%;
-  height: 1em;
-  border-bottom: 2px solid #FF9F1C;
-  grid-column: 2 / 4;
-  display: flex;
-  align-self: flex-start;
-  grid-row: 1;
-  margin-top: 3em;
-}
+
 .item {
   z-index: 5;
   margin: 1.5em;
@@ -155,34 +128,70 @@ header {
   color: #FF9F1C;
   font-size: 2rem;
   display: flex;
-  flex-direction: column;
-  margin: 1.25em 0 0 1.5em;
-  height: 3em;
+  padding-bottom: .1em;
+  margin: 2em;
+  height: auto;
 }
+
 .onion {
   background-image: url("../assets/onion.svg");
 }
+
 .haenyo {
   background-image: url("../assets/haenyo/haenyo_logo.svg");
 }
+
 .scratchmade {
   background-image: url("../assets/scratchmade/scratchmade.svg");
 }
+
 .powerslam {
   background-image: url("../assets/powerslam/PSW_Logo.svg");
 }
+
 .foodshed {
   background-image: url("../assets/foodshed/foodshed_logo.svg");
 }
+
 .urbanteachers {
   background-image: url("../assets/urbanteachers/ut-logo-blue.svg");
 }
+
 .pilon {
   background-image: url("../assets/pilon/logo_pilon_color.svg");
 }
+
 .wine {
   background-image: url("../assets/wine.svg");
 }
+
+/* About */
+.circle {
+  height: 10em;
+  width: 10em;
+  background-color: #FF9F1C;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.line-2 {
+  width: 100%;
+  height: 1em;
+  border-bottom: 2px solid #FF9F1C;
+  grid-column: 2 / 4;
+  display: flex;
+  align-self: flex-start;
+  grid-row: 1;
+  margin-top: 3em;
+}
+
+
 .duo {
   display: flex;
   flex-direction: row;
