@@ -1,23 +1,4 @@
 (function () {
-//  const act = document.querySelector('.active-about');
-//  const abt = document.getElementById('about');
-  //const btn = document.getElementById('btnabt');
-
-//  btn.addEventListener('click', handleEvent, false);
-
-//  function handleEvent (e) {
-//    if (e.target === abt[0]) {
-//      abt[0].classList.toggle('active-about');
-  //  } else if (e.target === btn[0]) {
-  //    btn[0].innerText = 'x';
-  //  } else {
-    //  btn[0].innerText = 'about';
-  //  }
-  //  else if {
-  //    btn[0].innerText = 'x';
-  //  }
-  //  e.stopPropagation();
-//  }
 const act = document.querySelector(".active-about");
 const abt = document.getElementById("about");
 const ftr = document.getElementById("ftr");
