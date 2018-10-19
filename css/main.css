@@ -134,35 +134,35 @@ header {
 }
 
 .onion {
-  background-image: url("../assets/onion.svg");
+  background-image: url("https://hancastanedo.com/assets/onion.svg");
 }
 
 .haenyo {
-  background-image: url("../assets/haenyo/haenyo_logo.svg");
+  background-image: url("https://hancastanedo.com/assets/haenyo/haenyo_logo.svg");
 }
 
 .scratchmade {
-  background-image: url("../assets/scratchmade/scratchmade.svg");
+  background-image: url("https://hancastanedo.com/assets/scratchmade/scratchmade.svg");
 }
 
 .noonas {
-  background-image: url("../assets/noonas/noonas_logo.svg");
+  background-image: url("https://hancastanedo.com/assets/noonas/noonas_logo.svg");
 }
 
 .foodshed {
-  background-image: url("../assets/foodshed/foodshed_logo.svg");
+  background-image: url("https://hancastanedo.com/assets/foodshed/foodshed_logo.svg");
 }
 
 .urbanteachers {
-  background-image: url("../assets/urbanteachers/ut-logo-blue.svg");
+  background-image: url("https://hancastanedo.com/assets/urbanteachers/ut-logo-blue.svg");
 }
 
 .pilon {
-  background-image: url("../assets/pilon/logo_pilon_color.svg");
+  background-image: url("https://hancastanedo.com/assets/pilon/logo_pilon_color.svg");
 }
 
 .wine {
-  background-image: url("../assets/wine.svg");
+  background-image: url("https://hancastanedo.com/assets/wine.svg");
 }
 
 /* About */
@@ -431,7 +431,7 @@ body {
 }
 
 .push {
-  background: url("../assets/push.svg");
+  background: url("https://hancastanedo.com/assets/push.svg");
   height: 50%;
   width: 300%;
   position: absolute;
