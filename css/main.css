@@ -431,7 +431,7 @@ body {
 }
 
 .push {
-  background: url("https://hancastanedo.com/assets/push.svg");
+  background: url('../assets/push-often.svg') ;
   height: 50%;
   width: 300%;
   position: absolute;
