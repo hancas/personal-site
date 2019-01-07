@@ -143,6 +143,7 @@ header {
   width: 18em;
   background-color: #FF9F1C !important;
   border-radius: 50%;
+  mix-blend-mode: multiply;
 }
 
 .line-2 {
