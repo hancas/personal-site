@@ -21,8 +21,8 @@ html {
 body {
   background-color: #ffffff;
   font-family: 'Damien Text Reg';
-    font-style: Normal;
-    font-weight: Normal;
+  font-style: Normal;
+  font-weight: Normal;
   color: #343f34;
   margin: 0;
   padding: 0;
@@ -84,8 +84,8 @@ h6 {
 p {
   font-size: 1em;
   font-family: 'Damien Text Reg';
-    font-style: Normal;
-    font-weight: Normal;
+  font-style: Normal;
+  font-weight: Normal;
   color: #343f34;
   margin: 1em 0;
   line-height: 1.5;
@@ -192,7 +192,6 @@ img {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   justify-content: space-between;
-  position: absolute;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -279,7 +278,7 @@ h2 {
   margin-left: 15em;
   margin-top: 15em;
 }
-.above {
+/*.above {
   transition-delay: 5s ease-in-out;
   transform: translateY(-200vh);
 }
@@ -289,7 +288,7 @@ h2 {
 }
 .under {
   transform: translateY(100vh);
-}
+} */
 #about {
   background-color: #ffffff;
   height: 100vh;
@@ -373,54 +372,54 @@ button:hover {
   transition: linear .5s;
 }
 
-
+/*
 .box_1 {
-/*  background-color: #464d38; */
+/*  background-color: #464d38;
   z-index: 1;
   transform: translateY(0vh);
 }
 
 .box_2 {
-/*  background-color: #5BBB98; */
+/*  background-color: #5BBB98;
   z-index: 2;
   transform: translateY(100vh);
 }
 
 .box_3 {
-  /*background-color: #af9164; */
+  /*background-color: #af9164;
   z-index: 3;
   transform: translateY(200vh);
 }
 
 .box_4 {
-/*  background-color: #49487b; */
+/*  background-color: #49487b;
   z-index: 4;
   transform: translateY(300vh);
 }
 
 .box_5 {
-/*  background-color: #154D9F; */
+/*  background-color: #154D9F;
   z-index: 5;
   transform: translateY(400vh);
 }
 
 .box_6 {
-/*  background-color: #00BAA1; */
+/*  background-color: #00BAA1;
   z-index: 6;
   transform: translateY(500vh);
 }
 
 .box_7 {
-/*  background-color: #333F33; */
+/*  background-color: #333F33;
   z-index: 7;
   transform: translateY(600vh);
 }
 .box_8 {
-/*  background-color: #353128; */
+/*  background-color: #353128;
   z-index: 8;
   transform: translateY(700vh);
 }
-
+*/
 .greeting {
   font-family: 'DamienDisplayBold', serif;
   font-size: 2rem;
