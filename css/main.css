@@ -101,7 +101,7 @@ header {
   height: 7em;
   position: fixed;
   padding: 2em;
-  z-index: 1;
+  z-index: 10;
 }
 
 .line {
@@ -109,21 +109,19 @@ header {
   border-bottom: 1px solid #FF9F1C;
 }
 
-.item {
+.portfolio-title {
   font-family: 'DamienDisplayBold', serif;
   z-index: 1;
   grid-column: 1;
   grid-row: 1;
-  padding: 0 2em;
+  padding-right: 1em;
   color: #FF9F1C;
-  background-color: #ffffff;
 }
 .number {
   grid-column: 12;
   grid-row: 1;
-  padding: 0 2em;
+  padding-left: 1em;
   color: #FF9F1C;
-  background-color: #ffffff;
   z-index: 1;
 }
 .info-header {
@@ -233,17 +231,7 @@ h2 {
   letter-spacing: .05rem;
   text-align: left;
 }
-.portfolio-title {
-  width: 100%;
-  height: 7em;
-  grid-column: 1 / 13;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  z-index: 10;
-}
+
 .one {
   z-index: 1;
 }
@@ -696,15 +684,7 @@ h3 {
       grid-column: 1;
       padding: 0 1em 0 0;
     }
-    .portfolio-title {
-      height: 4em;
-      grid-column: 1;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      position: static;
-    }
+
     .portfolio-title::after {
       background-color: #FF9F1C;
       content: "";

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "intersection-observer": "^0.5.1",
     "react": "^16.8.6",
     "react-waypoint": "^9.0.2"
   },
